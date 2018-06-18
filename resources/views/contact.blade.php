@@ -1,5 +1,11 @@
 <!-- resources/view/contact.blade.php -->
-<!DOCTYPE html>
+@extends("layout")
+
+@section("content")
+  <h1>やっと会えたね、Contact...</h1>
+@endsection
+
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <title>Contact</title>
@@ -7,4 +13,4 @@
 <body>
   <h1>やっと会えたね、Contact...</h1>
 </body>
-</html>
+</html> -->

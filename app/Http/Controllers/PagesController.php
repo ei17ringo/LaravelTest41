@@ -17,7 +17,14 @@ class PagesController extends Controller
         // return view("pages.about");
         // と指定して、カリキュラム内に書かれているHTMLが表示されるようにしましょう。
         // ヒント：pages.about -> view/pages/about.blade.phpのことを表す
-        return view("contact");
+
+        $first_name = "Ichiro";
+        $last_name = "Suzuki";
+
+        // return view("pages.about");
+        //第二引数に、変数を指定
+        // compact  文字列で指定した変数を展開する
+        return view("pages.about",compact('first_name','last_name'));
     }
     // /**
     //  * Display a listing of the resource.
