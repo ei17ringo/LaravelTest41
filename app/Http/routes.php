@@ -24,3 +24,16 @@ Route::get('contact', 'WelcomeController@contact');   // 追加
 // http://localhost:8000/about にアクセスしたら、PagesControllerのaboutメソッドを実行する
 Route::get('about','PagesController@about');
 
+// http://localhost:8000/tweets とアクセスしたら、TweetsControllerのindexメソッドを実行する
+
+Route::get('tweets', 'TweetsController@index');
+
+//指定したidのtweetsデータを表示する
+Route::get('tweets/{id}', 'TweetsController@show');
+
+
+
+
+
+
+
